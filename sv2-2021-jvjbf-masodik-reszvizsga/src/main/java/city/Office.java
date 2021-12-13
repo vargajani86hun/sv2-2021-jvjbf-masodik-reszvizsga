@@ -8,7 +8,7 @@ public class Office extends Building {
     private String company;
     private int numberOfTablesPerLevel;
 
-    public Office(double area, int levels, Address address, String company, int numberOfTablesPerLevel) {
+    public Office(int area, int levels, Address address, String company, int numberOfTablesPerLevel) {
         super(area, levels, address);
         this.company = company;
         if (numberOfTablesPerLevel*MINIMUM_AREA_FOR_TABLE > area) {
@@ -20,7 +20,7 @@ public class Office extends Building {
         this.numberOfTablesPerLevel = numberOfTablesPerLevel;
     }
 
-    public Office(double area, Address address, String company, int numberOfTablesPerLevel) {
+    public Office(int area, Address address, String company, int numberOfTablesPerLevel) {
         this(area, 1, address, company, numberOfTablesPerLevel);
     }
 
