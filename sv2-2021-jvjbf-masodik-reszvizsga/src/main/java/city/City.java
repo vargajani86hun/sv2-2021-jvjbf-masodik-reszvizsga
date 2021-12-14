@@ -22,7 +22,14 @@ public class City {
         }
     }
 
+    /*
+        This is the shortest version of the searching. Because it has to be once a full iteration
+        on the list of buildings, but in that solution, don't need more.
+    */
     public Building findHighestBuilding() {
+        if (buildings.isEmpty()) {
+            throw new IllegalStateException("There's no building in the city!");
+        }
         List<Building> highestBuildings = new ArrayList<>();
         int maxLevel = 0;
         for (Building actual : buildings) {
