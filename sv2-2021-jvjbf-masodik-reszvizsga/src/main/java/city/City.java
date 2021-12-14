@@ -23,8 +23,8 @@ public class City {
     }
 
     /*
-        This is the shortest version of the searching. Because it has to be once a full iteration
-        on the list of buildings, but in that solution, don't need more.
+        This is the shortest version of the searching. Because on the list of buildings,
+        it has to be once a full iteration, but in that solution, don't need more.
     */
     public Building findHighestBuilding() {
         if (buildings.isEmpty()) {
